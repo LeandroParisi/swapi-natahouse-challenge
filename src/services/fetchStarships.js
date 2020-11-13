@@ -5,10 +5,9 @@ export default async function fetchStarships () {
   while(apiUrl) {
     const RESPONSE = await fetch(apiUrl);
     const DATA = await RESPONSE.json();
-    console.log(DATA);
     results = [...results, ...DATA.results];
     apiUrl = DATA.next
   }
   
-  return results;
+  return results.filter(ship => ship.MGLT !== 'unknown');
 }

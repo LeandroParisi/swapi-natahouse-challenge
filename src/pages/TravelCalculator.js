@@ -6,8 +6,12 @@ class TravelCalculator extends React.Component {
   constructor() {
     super();
 
+    this.calculateTravel = this.calculateTravel.bind(this);
+
     this.state = {
       starships: [],
+      starshipsStops: null,
+      inputedDistance: '',
     }
   }
 
@@ -16,16 +20,43 @@ class TravelCalculator extends React.Component {
     this.setState({ starships: API_RESPONSE })
   }
 
+  calculateTravel() {
+    const { inputedDistance, starships } = this.state;
+    const starshipsStops = travelCalculation(inputedDistance, starships);
+
+    this.setState({ starshipsStops })
+  }
+
   render() {
-    const { starships } = this.state;
-    console.log(travelCalculation(1000000, starships))
+    const { inputedDistance, starshipsStops } = this.state;
     return (
       <div>
         <header>
           <h1>StarWars travel calculator</h1>
         </header>
-      <main>
-        
+
+        <section className='user-input-container'>
+          <input 
+            type='number' 
+            placeholder='Travel distance (in MGTLs)' 
+            value={ inputedDistance }
+            onChange={ ({ target }) => this.setState({ inputedDistance: target.value })}
+          />
+
+          <button type='button' onClick={ this.calculateTravel }>
+            Calculate necessary stops!
+          </button>
+        </section>
+      <main className='starships-display'>
+        {starshipsStops 
+          ? starshipsStops.map(ship => (
+            <div className='starship-container'>
+              <span>{`Ship: ${ship.name}`}</span>
+              <span>{`Necessary Stops: ${ship.stops}`}</span>
+            </div>
+          ))
+          : null
+        }
       </main>
       </div>
     )
