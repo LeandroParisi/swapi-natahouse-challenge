@@ -1,19 +1,19 @@
 export default function travelCalculation(totalDistance, ships) {
-  let RESULT = [];
+  let result = [];
   
   ships.forEach(ship => {
     const { MGLT, consumables, name } = ship;
-    
+
     const CONSUMABLE_IN_DAYS = convertConsumablesToHours(consumables);
 
-    const NUMBER_OF_STOPS = Math.floor(totalDistance / (MGLT * CONSUMABLE_IN_DAYS));
+    const stops = Math.floor(totalDistance / (MGLT * CONSUMABLE_IN_DAYS));
 
-    const shipResult = { name, stops: NUMBER_OF_STOPS }
+    const shipResult = { name, stops }
 
-    RESULT = [...RESULT, shipResult];
+    result = [...result, shipResult];
   })
 
-  return RESULT
+  return result
 }
 
 function convertConsumablesToHours (consumables) {

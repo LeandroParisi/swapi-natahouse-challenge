@@ -1,6 +1,8 @@
 import React from 'react';
 import fetchStarships from '../services/fetchStarships';
 import travelCalculation from '../helpers/travelCalculation';
+import AWing from '../images/A-Wing.jpeg';
+import shipsImages from '../data/shipsImages';
 
 class TravelCalculator extends React.Component {
   constructor() {
@@ -51,6 +53,7 @@ class TravelCalculator extends React.Component {
         {starshipsStops 
           ? starshipsStops.map(ship => (
             <div className='starship-container'>
+              <img src={shipsImages[ship.name]} alt={ ship.name } width='100px' />
               <span>{`Ship: ${ship.name}`}</span>
               <span>{`Necessary Stops: ${ship.stops}`}</span>
             </div>
