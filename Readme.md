@@ -45,6 +45,17 @@ An application which given a travel distance in MGTLs, calculates necessary stop
 4. User input Form (src/pages/TravelCalculator.js lines: 40 - 50 and componentDidMount): 10min;
 5. Ships display (src/pages/TravelCalculator.js lines: 52 - 64 and calculateTravel function): 5min
 
+#### Total time spent: 1h23min
+
+<hr />
+
 ### Priority 2:
 1. Download and import starship images: 15min;
 2. Styling: 60min
+
+#### Total time spent: 1h15min
+
+<hr />
+
+#### Total time spent (entire project): 2h38min
+
