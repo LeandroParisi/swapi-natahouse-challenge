@@ -42,7 +42,7 @@ An application which given a travel distance in MGTLs, calculates necessary stop
 2. Create fetch function (src/services/fetchStarships.js): 23min;
 3. travelCalculation helper (src/helpers/travelCalculation.js): 25min;
 4. User input Form (src/pages/TravelCalculator.js lines: 40 - 50 and componentDidMount): 10min;
-5. Ships display (src/pages/TravelCalculator.js lines: 52 - 64 and calculateTravel function): 5min
+5. Ships display (src/components/StarshipsDisplay.js and calculateTravel function): 5min
 
 #### Total time spent: 1h23min
 
