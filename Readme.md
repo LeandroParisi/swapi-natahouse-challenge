@@ -57,5 +57,13 @@ An application which given a travel distance in MGTLs, calculates necessary stop
 
 <hr />
 
-#### Total time spent (entire project): 2h38min
+### Priority 3:
+1. Input error message: 10min;
+2. Tests: 60min
+
+#### Total time spent: 1h10min
+
+<hr />
+
+#### Total time spent (entire project): 3h48min
 

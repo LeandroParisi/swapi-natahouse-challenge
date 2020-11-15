@@ -1,5 +1,4 @@
 // Helpers
-@import './0.helpers/functions';
 @import './0.helpers/mixins';
 @import './0.helpers/variables';
 
@@ -8,15 +7,10 @@
 @import './1.Base/buttons';
 @import './1.Base/fonts';
 @import './1.Base/forms';
-@import './1.Base/links';
-@import './1.Base/reset';
 
 // Layouts
 @import './2.Layout/footer';
 @import './2.Layout/header';
-@import './2.Layout/main';
-@import './2.Layout/navigation';
-@import './2.Layout/sidebar';
 
 
 

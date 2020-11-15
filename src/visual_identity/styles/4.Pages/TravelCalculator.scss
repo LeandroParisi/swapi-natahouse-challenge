@@ -11,10 +11,26 @@ header {
   @include flexCenter(column);
   margin-bottom: 2%;
 
+  & p {
+    margin-top: 2%;
+    color: $bananaYellow;
+    background-color: rgba(0,0,0,0.6)
+  }
+
   & input {
     margin-bottom: 2.5%;
     width: 50%;
-    font-size: calc(1rem + 0.6vw)
+    font-size: calc(1rem + 0.6vw);
+
+    &.error {
+      border-bottom: 2px solid red;
+      color: red;
+      transition: 0.5s;
+
+      &::placeholder {
+        color: red;
+      }
+    }
   }
 }
 
