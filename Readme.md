@@ -38,7 +38,7 @@ An application which given a travel distance in MGTLs, calculates necessary stop
 
 ## TimeLog:
 
-### Priority 1:
+### Mandatory 1:
 1. Understand the problema and API documentation: 20min;
 2. Create fetch function (src/services/fetchStarships.js): 23min;
 3. travelCalculation helper (src/helpers/travelCalculation.js): 25min;
@@ -49,7 +49,7 @@ An application which given a travel distance in MGTLs, calculates necessary stop
 
 <hr />
 
-### Priority 2:
+### Bonus 1:
 1. Download and import starship images: 15min;
 2. Styling: 60min
 
@@ -57,7 +57,7 @@ An application which given a travel distance in MGTLs, calculates necessary stop
 
 <hr />
 
-### Priority 3:
+### Bonus 2:
 1. Input error message: 10min;
 2. Tests: 60min
 
