@@ -60,10 +60,11 @@ An application which given a travel distance in MGTLs, calculates necessary stop
 ### Bonus 2:
 1. Input error message: 10min;
 2. Tests: 60min
+3. Refactoring: travelCalculationSwitch with regex: 15min
 
-#### Total time spent: 1h10min
+#### Total time spent: 1h25min
 
 <hr />
 
-#### Total time spent (entire project): 3h48min
+#### Total time spent (entire project): 4h03min
 

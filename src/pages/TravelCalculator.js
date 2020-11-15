@@ -30,7 +30,8 @@ class TravelCalculator extends React.Component {
     if(isNaN(parseInt(inputedDistance)) || parseInt(inputedDistance) === 0) {
       this.setState({ 
         inputError: 'Input a valid travel distance',
-        inputErrorClass: 'error'
+        inputErrorClass: 'error',
+        starshipsStops: null,
       }, () => {
         setTimeout(() => {
           this.setState({

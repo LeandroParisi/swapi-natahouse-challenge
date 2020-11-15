@@ -27,22 +27,14 @@ function convertConsumablesToHours (consumables) {
 }
 
 function convertConsumablesSwitch(duration, format) {
-  switch(format) {
-    case 'year':
+  switch(true) {
+    case /year*/.test(format):
       return duration * 360 * 24;
-    case 'years':
-      return duration * 360 * 24
-    case 'month':
+    case /month*/.test(format):
       return duration * 30 * 24
-    case 'months':
-      return duration * 30 * 24
-    case 'week':
+    case /week*/.test(format):
       return duration * 7 * 24
-    case 'weeks':
-      return duration * 7 * 24
-    case 'day':
-      return duration * 24
-    case 'days':
+    case /day*/.test(format):
       return duration * 24
     default:
       return null
