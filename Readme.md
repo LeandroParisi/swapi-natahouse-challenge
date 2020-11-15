@@ -1,6 +1,5 @@
 <h1 align="center">StarWars travel Calculator</h1>
 <h2 align="center">A project built for Nata House selection process</h2>
-<p align="center"><a href="link to GHPages" >See this project Live NOW!</a></p>
 <hr />
 
 ## Abstract:
