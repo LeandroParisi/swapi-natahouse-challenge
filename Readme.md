@@ -10,6 +10,8 @@ An application which given a travel distance in MGTLs, calculates necessary stop
 
 ## Project Screen Shot(s)
 
+<img src="https://github.com/LeandroParisi/swapi-natahouse-challenge/blob/main/demonstration/StarWars_calculator_demonstration.gif?raw=true" alt="App demonstration" >
+
 <hr />
 
 ## Installation and Setup Instructions 
