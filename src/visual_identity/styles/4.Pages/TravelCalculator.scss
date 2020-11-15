@@ -25,7 +25,7 @@ header {
   & .starship-container {
     @include flexCenter(column);
     width: 30%;
-    height: 35vh;
+    height: 45vh;
     background-color: rgba(0,0,0,0.6);
     margin: 1%;
     color: white;

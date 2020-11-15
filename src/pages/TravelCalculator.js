@@ -1,10 +1,10 @@
 import React from 'react';
 import fetchStarships from '../services/fetchStarships';
 import travelCalculation from '../helpers/travelCalculation';
-import stopIcon from '../images/icons/stop_icon.png';
 import shipsImages from '../data/shipsImages';
-import '../visual_identity/styles/4.Pages/TravelCalculator.scss'
-import logo from '../images/starwars-logo.jpg'
+import stopIcon from '../images/icons/stop_icon.png';
+import '../visual_identity/styles/4.Pages/TravelCalculator.scss';
+import { Header, Footer } from '../components';
 
 class TravelCalculator extends React.Component {
   constructor() {
@@ -20,7 +20,7 @@ class TravelCalculator extends React.Component {
   }
 
   async componentDidMount() {
-    const API_RESPONSE = await fetchStarships();
+    const API_RESPONSE = await fetchStarships()
     this.setState({ starships: API_RESPONSE })
   }
 
@@ -35,10 +35,7 @@ class TravelCalculator extends React.Component {
     const { inputedDistance, starshipsStops } = this.state;
     return (
       <div>
-        <header>
-          <img src={ logo } alt="Logo" width="150px" />
-          <h1>Travel calculator</h1>
-        </header>
+        <Header />
 
         <section className='user-input-container'>
           <input 
@@ -66,15 +63,8 @@ class TravelCalculator extends React.Component {
           }
         </main>
 
-        <footer>
-          <span className="legend">
-            <b>Legend:</b>
-            <div className='legend-inner-container'>
-              <img src={ stopIcon } className="stop-icon" width='30px' alt='Stop Icon' />
-              <p>Number of necessary stops</p>
-            </div>
-          </span>
-        </footer>
+        <Footer />
+
       </div>
     )
   }
