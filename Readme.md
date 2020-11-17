@@ -31,7 +31,7 @@ An application which given a travel distance in MGTLs, calculates necessary stop
 
 5. To Visit App:
 
-    `localhost:3000/ideas`  
+    `localhost:3000`  
 
 <hr />
 
